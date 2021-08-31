@@ -27,14 +27,14 @@ port = '8050'
 ### File Reading
 #**Dataframe from excel file, printing sheet names**
 #creating dataframe - may take time due to its large size, sheet names will be printet once it is finished
-import  tkinter as tk
-from tkinter import filedialog
-root = tk.Tk()
-root.withdraw()
-root.wm_attributes('-topmost', True)
-file_path = filedialog.askopenfilename(parent=root)
-print(file_path)
-#file_path = "V1SimpleCharging.xlsx"
+#import  tkinter as tk
+#from tkinter import filedialog
+#root = tk.Tk()
+#root.withdraw()
+#root.wm_attributes('-topmost', True)
+#file_path = filedialog.askopenfilename(parent=root)
+#print(file_path)
+file_path = "V1SimpleCharging.xlsx"
 if file_path == '':
     file_path = r"C:\Users\kric\Syddansk Universitet\Zheng Ma - PhD projects-Distributed AI for Energy Business Ecosystem\PhD-Kristoffer Christensen\Dynamic tariff evaluation\Simulation results\V1SimpleCharging.xlsx"
     print('Failed to open file, default file implemented in script is used: '+str(file_path))
